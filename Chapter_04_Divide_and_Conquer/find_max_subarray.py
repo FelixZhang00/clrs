@@ -36,6 +36,8 @@ def find_max_crossing_subarray(arr, lo, mid, hi):
 
 
 def find_max_subarray(arr, lo, hi):
+  if len(arr) == 0:
+    return (0,0,0)
   if lo >= hi:
     return (lo, hi, arr[lo])
   else:
@@ -53,8 +55,10 @@ def find_max_subarray(arr, lo, hi):
 
 
 def simpleTest():
-  a = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
+  # a = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
   # a = [-13, -3, -25, -20, -3, -16, -23, -18, -20, -7, -12, -5, -22, -15, -4, -7]
+
+  a = []
 
   (lo,hi,sum) = find_max_subarray(a, 0, len(a) - 1)
   print (lo,hi,sum)
