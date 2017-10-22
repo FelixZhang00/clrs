@@ -15,6 +15,7 @@ def exch(arr, i, j):
 
 def bubble_sort(arr):
   for i in range(0, len(arr) - 1):
+    # 反向遍历数组
     for j in range(i + 1, len(arr))[::-1]:
       if arr[j] < arr[j - 1]:
         exch(arr, j, j - 1)
