@@ -20,8 +20,12 @@ def square_matrix_multiply(A,B):
   return C
 
 
-# 一个简单的分治法求解，时间复杂度同样是O(n^3)
+# TODO 一个简单的分治法求解，时间复杂度同样是O(n^3)
 def square_matrix_multiply_recursive(A,B):
+  pass
+
+# TODO strassen算法 比较复杂
+def matrix_product_strassen(A,B):
   pass
 
 def simpleTest():
